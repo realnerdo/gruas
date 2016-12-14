@@ -1,0 +1,1 @@
+<?php $preNomSitio = "Bienvenid@ &lsaquo; "?><?php include("header.php");?><h2>Bienvenido al CMS de <?php echo $nomSitio?></h2><?php include("footer.php");?>

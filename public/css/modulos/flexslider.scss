@@ -1,0 +1,100 @@
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider{
+	position: relative;
+
+	.slides{
+		& > li {
+			display: none;
+			-webkit-backface-visibility: hidden; /* Hide the slides before the JS is loaded. Avoids image jumping */
+		}
+	
+		img {
+			width: 100%;
+			display: block;
+		}
+		
+		&:after {
+			content: "\0020";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+	}
+}
+
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+
+html[xmlns] .slides {
+	display: block;
+}
+* html .slides {
+	height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+	display: block;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.flex-control-nav {
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	z-index: 101;
+	text-align: center;
+	
+	li {
+		margin: 0 6px;
+		display: inline-block;
+		zoom: 1;
+	}
+	
+	a {
+		width: 6px;
+		height: 6px;
+		display: block;
+		background: #1a85c0;
+		cursor: pointer;
+		text-indent: -9999px;
+		border-radius: 100%;
+		border: 1px solid transparent;
+
+		&.flex-active {
+			background-color: transparent;
+			border: 1px solid #fff;
+		}
+	}
+}
+
+.flex-caption{
+	border-top: 4px solid #fff;
+	padding:10px 20px;
+}
+
+.flex-content{
+	background: #fafafa;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 100%;
+	padding: 40px 0;
+}
+
+.flex-disabled{
+	display: none!important;
+}

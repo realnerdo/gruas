@@ -1,0 +1,1 @@
+<div class="seccion">	<p><label><strong>Posici&oacute;n:</strong> <span class="descripcion">[ ej. 10]</span></label></p>	<p><input type="text" name="orden" value="<?php echo $row_edit['orden']?>"></p></div>

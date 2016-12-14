@@ -1,0 +1,3 @@
+<?php	switch($opcionesTemplate['configuracion']['template']):		case "template-home":			$includeTemplate = "templates/page/home.php";		break;		case "template-promociones":			$includeTemplate = "templates/page/promociones.php";		break;		case "template-contacto":			$includeTemplate = "templates/page/contacto.php";		break;		case "template-faqs":			$includeTemplate = "templates/page/preguntasFrecuentes.php";		break;		case "template-productos":			$includeTemplate = "templates/page/productos.php";		break;		case "template-default":		default:			$includeTemplate = "templates/page/default.php";		break;	endswitch;?>
+
+<?php include($includeTemplate);?>
