@@ -1,0 +1,29 @@
+#servicios
+    background: url('img/bg.jpg') repeat
+    [class^="col-"]
+        +bp($large)
+            width: 50%
+        +bp($medium)
+            width: 100%
+    .section-title
+        color: $white
+    .service
+        text-align: center
+        margin-bottom: 2rem
+        .cover
+            border: 4px solid $yellow
+            border-radius: rem(10px)
+            margin-bottom: 1rem
+            overflow: hidden
+            .img
+                width: 100%
+        .title
+            +font-size(28px)
+            font-weight: 500
+            color: $yellow
+            margin-bottom: .8rem
+        .content
+            +font-size(18px)
+            font-style: italic
+            font-weight: 300
+            color: $white

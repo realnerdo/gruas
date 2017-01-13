@@ -1,1 +1,0 @@
-<?php	$carpeta_imagenes = "../archivos/imagenes/";	$carpeta_archivos = "../archivos/archivos/";?>

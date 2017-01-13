@@ -1,0 +1,26 @@
+#footer
+    background: url('img/bg.jpg') repeat
+    padding: 1rem
+    [class^="col-"]
+        +bp($large)
+            text-align: center
+            width: 100%
+    .title
+        +font-size(18px)
+        color: $yellow
+        margin-bottom: 1rem
+        text-transform: uppercase
+    .content
+        +font-size(14px)
+        color: $white
+    .copyright
+        +font-size(13px)
+        color: $white
+        padding: 1rem 0
+        text-align: center
+        .endor
+            transform: translateY(-.15rem)
+            width: rem(50px)
+    .logo
+        .img
+            width: rem(180px)

@@ -1,7 +1,0 @@
-<?php	session_start();	require("../scripts/gump.class.php");
-	$gump = new GUMP();
-	$_GET = $gump->sanitize($_GET);	$_POST = $gump->sanitize($_POST);
-	if(!empty($_POST['btn_acceder'])):		if(!empty($_POST['login'])):			if(!empty($_POST['pass'])):				require("../conexion.php");
-				$login = str_replace("'", "", str_replace(" ", "", $_POST['login']));				$pass = str_replace("'", "", str_replace(" ", "", $_POST['pass']));				$pass_sha1 = ($_POST["metodo"]==0) ? sha1($pass) : $pass;
-				$query = "SELECT idUser, login, nombre, apellido, empresa, email, nomArchivo, fecha, telefono, ciudad, estado, pais, rol FROM ctlg_usuarios WHERE login='{$login}' AND password='{$pass_sha1}' AND rol <= 2 LIMIT 0,1";				$result = mysql_query($query);
-				if($result and mysql_num_rows($result)==1):					$_SESSION['user'] = mysql_fetch_array($result);					$_SESSION['user']['acceso'] = "cpanel";					$mensaje = "Bienvenid@ ".$_SESSION['user']['nombre'];					$clase = "exito";				else:					$mensaje = "El nombre de usuario o password es incorrecto. ";					$clase = "error";				endif;			else:				$mensaje = "El campo contrase&ntilde;a está vac&iacute;o.";				$clase = "alerta";			endif;		else:			$mensaje = "El campo Nombre de usuario est&aacute; vac&iacute;o.";			$clase = "alerta";		endif;		$_SESSION['resultado'] = array(			"mensaje"=>$mensaje,			"clase"=>$clase		);		header("Location:../");	endif;?>

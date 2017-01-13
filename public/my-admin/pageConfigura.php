@@ -1,1 +1,0 @@
-<?php $pre_nom_sitio = "Configuraci&oacute;n &lsaquo; "?><?php include("header.php");?><?php include("forms/form-configura.php");?><?php include("footer.php");?>

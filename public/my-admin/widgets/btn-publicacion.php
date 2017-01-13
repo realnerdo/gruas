@@ -1,1 +1,0 @@
-<div class="cont-btn-pub">	<p align="right"><input class="btn_submit" type="submit" name="<?php echo($accion=="Editar")?"edit":"add";?>" value="<?php echo ($accion=="Editar")?"Actualizar":"Agregar";?>" /></p></div><!--.cont-btn-pub-->

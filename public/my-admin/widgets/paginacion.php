@@ -1,1 +1,0 @@
-<?php	if($paging->numTotalPaginas()>1):?>		<div class="paginacion">			<?php				if(isset($_GET['s']) and isset($_GET['s'])!=''):?>					<a href="<?php echo basename($_SERVER['PHP_SELF'])?>"> &larr; Volver a todos las entradas</a>			<?php				endif;				echo $paging->fetchNavegacion();?>		</div><!--.paginacion--><?php	endif;?>

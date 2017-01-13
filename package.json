@@ -1,0 +1,30 @@
+{
+  "name": "gruas",
+  "version": "1.0.0",
+  "description": "gruas",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realnerdo/gruas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realnerdo/gruas/issues"
+  },
+  "homepage": "https://github.com/realnerdo/gruas#readme",
+  "dependencies": {
+    "glidejs": "^2.0.9",
+    "gmaps": "^0.4.24",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.0.0",
+    "imagesloaded": "^4.1.1",
+    "jquery": "^3.1.1"
+  }
+}

@@ -1,3 +1,0 @@
-<h3>Metatags</h3>
-<div class="seccion">	<p><label><strong>Palabras clave:</strong> <span class="descripcion">[ ej. lorem, ipsum]</span></label></p>	<p><input type="text" name="opciones[metas][keywords]" value="<?php echo $opciones['metas']['keywords']?>"></p></div>
-<div class="seccion">	<p><label><strong>Descripci&oacute;n:</strong> <span class="descripcion">[ ej. lorem ipsum dolor sit amet]</span></label></p>	<p><input type="text" name="opciones[metas][description]" value="<?php echo $opciones['metas']['description']?>"></p></div>

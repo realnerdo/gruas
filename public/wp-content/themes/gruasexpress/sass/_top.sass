@@ -1,0 +1,75 @@
+#header
+    background: rgba($dark, .5)
+    border-bottom: 4px solid $yellow
+    position: relative
+    z-index: 2
+    .wrapper
+        position: relative
+        #logo
+            left: 0
+            position: absolute
+            top: .8rem
+            z-index: 3
+            .link
+                display: block
+    #main-menu
+        float: right
+        .menu-menu-principal-container
+            .menu
+                +clear
+                list-style: none
+                +bp($large)
+                    padding-top: 2rem
+                    clear: none
+                    float: none
+                .menu-item
+                    float: left
+                    margin-right: 1rem
+                    +bp($large)
+                        float: none
+                        margin: 1rem 2rem
+                    a
+                        +font-size(18px)
+                        color: $white
+                        font-style: italic
+                        font-weight: 600
+                        letter-spacing: .1em
+                        text-decoration: none
+                        text-transform: uppercase
+                        &:hover
+                            cursor: pointer
+                            text-decoration: underline
+        &.responsive
+            +bp($large)
+                position: fixed
+                top: 0
+                bottom: 0
+                right: 0
+                background: $dark
+                width: 50%
+                overflow-y: auto
+                transform: translateX(100%)
+                z-index: 90
+            +bp($medium)
+                width: 70%
+            +bp($small)
+                width: 90%
+            &.active
+                transform: translateX(0)
+                transition: all 0.3s ease-in-out
+                & + .toggle-menu
+                    position: fixed
+                    top: 3rem
+                    right: 2rem
+    .toggle-menu
+        appearance: none
+        background: none
+        border: 0
+        float: right
+        display: none
+        position: relative
+        z-index: 91
+        +bp($large)
+            display: block
+        &:hover
+            cursor: pointer
