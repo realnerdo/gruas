@@ -3,9 +3,12 @@
         +bp($medium)
             width: 100%
     .marquee
+        +opacity(0)
+        &.visible
+            animation: fade-in .8s forwards ease-in-out
         .img
             display: inline-block
             margin-right: 2rem
-            width: rem(160px)
+            height: rem(80px)
             &:last-child
                 margin: 0

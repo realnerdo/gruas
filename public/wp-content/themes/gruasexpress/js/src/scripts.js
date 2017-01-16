@@ -1,5 +1,26 @@
 $(function(){
     var $body = $('body');
+    var $window = $(window);
+
+    // Animate when visible
+    var animate = $('.animate');
+    if(animate.length){
+        function isVisible($el) {
+            var winTop = $window.scrollTop();
+            var winBottom = winTop + $window.height();
+            var elTop = $el.offset().top;
+            var elBottom = elTop + $el.height();
+            return (elTop<= winBottom);
+        }
+        $window.scroll(function(){
+            animate.each(function(){
+                var $this = $(this);
+                if (isVisible($this)){
+                    $this.addClass("visible");
+                }
+            })
+        });
+    }
 
     // Slider
     $('.glide').glide({

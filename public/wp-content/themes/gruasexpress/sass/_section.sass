@@ -4,6 +4,7 @@
     text-align: center
     .section-title
         +font-size(31px)
+        +opacity(0)
         color: $dark
         display: inline-block
         font-style: italic
@@ -11,6 +12,8 @@
         position: relative
         text-align: center
         text-transform: uppercase
+        &.visible
+            animation: up-in .8s forwards ease-in-out
         +bp($medium)
             +font-size(24px)
         +bp($xsmall)
@@ -26,6 +29,9 @@
             width: 100%
     .section-subtitle
         +font-size(18px)
+        +opacity(0)
         color: $text
         text-align: center
         margin-bottom: 2rem
+        &.visible
+            animation: fade-in .8s forwards ease-in-out

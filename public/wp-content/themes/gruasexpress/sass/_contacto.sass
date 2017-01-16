@@ -3,9 +3,15 @@
         +bp($medium)
             width: 100%
     .map
+        +opacity(0)
         height: rem(500px)
         width: 100%
+        &.visible
+            animation: up-in .8s forwards ease-in-out
     .contact-form
+        +opacity(0)
+        &.visible
+            animation: up-in .8s forwards ease-in-out
         .form-group
             margin-bottom: 1rem
             .input

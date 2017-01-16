@@ -1,12 +1,12 @@
 <section id="equipos" class="section">
-    <h3 class="section-title"><img src="<?php echo get_template_directory_uri() ?>/img/fast.png" class="icon"><?php the_field('equipos_titulo'); ?></h2>
+    <h3 class="section-title animate"><img src="<?php echo get_template_directory_uri() ?>/img/fast.png" class="icon"><?php the_field('equipos_titulo'); ?></h2>
     <!-- /.section-title -->
-    <h2 class="section-subtitle"><?php the_field('equipos_subtitulo'); ?></h3>
+    <h2 class="section-subtitle animate"><?php the_field('equipos_subtitulo'); ?></h3>
     <!-- /.subtitle -->
     <div class="wrapper">
         <div class="row">
             <div class="col-12">
-                <section id="equipos-slider" class="glide">
+                <section id="equipos-slider" class="glide animate">
                     <!-- <div class="glide__arrows">
                         <button class="glide__arrow prev" data-glide-dir="<">Anterior</button>
                         <button class="glide__arrow next" data-glide-dir=">">Siguiente</button>

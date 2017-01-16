@@ -4,7 +4,10 @@
         +bp($large)
             width: 100%
     .text
+        +opacity(0)
         text-align: left
+        &.visible
+            animation: up-in .8s forwards ease-in-out
         .title
             +font-size(31px)
             color: $dark
