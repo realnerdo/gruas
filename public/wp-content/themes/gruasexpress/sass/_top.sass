@@ -9,9 +9,19 @@
             left: 0
             position: absolute
             top: .8rem
+            width: rem(200px)
             z-index: 3
+            +bp($medium)
+                width: rem(150px)
+            +bp($small)
+                top: 1.5rem
+                width: rem(120px)
+            +bp($xsmall)
+                width: rem(100px)
             .link
                 display: block
+                .img
+                    width: 100%
     #main-menu
         float: right
         .menu-menu-principal-container

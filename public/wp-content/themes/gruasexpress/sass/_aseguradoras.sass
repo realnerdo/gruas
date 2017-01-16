@@ -2,14 +2,10 @@
     [class^="col-"]
         +bp($medium)
             width: 100%
-    .glide
-        position: relative
-        width: 60%
-        margin: 0 auto
-        .glide__wrapper
-            .glide__track
-                .glide__slide
-                    position: relative
-                    text-align: center
-                    .img
-                        width: rem(200px)
+    .marquee
+        .img
+            display: inline-block
+            margin-right: 2rem
+            width: rem(160px)
+            &:last-child
+                margin: 0

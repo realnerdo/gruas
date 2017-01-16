@@ -138,9 +138,22 @@ img {
       left: 0;
       position: absolute;
       top: .8rem;
+      width: 14.28571rem;
       z-index: 3; }
+      @media only screen and (max-width: 768px) {
+        #header .wrapper #logo {
+          width: 10.71429rem; } }
+      @media only screen and (max-width: 480px) {
+        #header .wrapper #logo {
+          top: 1.5rem;
+          width: 8.57143rem; } }
+      @media only screen and (max-width: 320px) {
+        #header .wrapper #logo {
+          width: 7.14286rem; } }
       #header .wrapper #logo .link {
         display: block; }
+        #header .wrapper #logo .link .img {
+          width: 100%; }
   #header #main-menu {
     float: right; }
     #header #main-menu .menu-menu-principal-container .menu {
@@ -322,15 +335,12 @@ img {
   #aseguradoras [class^="col-"] {
     width: 100%; } }
 
-#aseguradoras .glide {
-  position: relative;
-  width: 60%;
-  margin: 0 auto; }
-  #aseguradoras .glide .glide__wrapper .glide__track .glide__slide {
-    position: relative;
-    text-align: center; }
-    #aseguradoras .glide .glide__wrapper .glide__track .glide__slide .img {
-      width: 14.28571rem; }
+#aseguradoras .marquee .img {
+  display: inline-block;
+  margin-right: 2rem;
+  width: 11.42857rem; }
+  #aseguradoras .marquee .img:last-child {
+    margin: 0; }
 
 @media only screen and (max-width: 768px) {
   #contacto [class^=col-] {

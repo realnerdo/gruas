@@ -1,4 +1,6 @@
 $(function(){
+    var $body = $('body');
+
     // Slider
     $('.glide').glide({
         type: 'carousel',
@@ -10,9 +12,21 @@ $(function(){
     if(menu.length){
         var toggle_menu = $('.toggle-menu');
         toggle_menu.click(function(){
-            console.log('here');
             menu.toggleClass('active');
             return false;
+        });
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    menu.toggleClass('active');
+                    return false;
+                }
+            }
         });
     }
 
