@@ -10,7 +10,6 @@
             <?php foreach ($images as $image): ?>
                 <li class="glide__slide">
                     <div class="img" style="background: url('<?php echo $image['sizes']['large'] ?>') center center no-repeat; background-size: cover;"></div>
-                    <!-- <img src="<?php echo $image['sizes']['large'] ?>" class="img" alt="<?php echo $image['alt'] ?>"> -->
                 </li>
             <?php endforeach; ?>
         </ul>

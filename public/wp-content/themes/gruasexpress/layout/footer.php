@@ -30,7 +30,7 @@
             </div>
             <!-- /.col-3 -->
             <div class="col-12">
-                <div class="copyright">&copy; 2016 Agencia de publicidad: <a href="http://grupoendor.com/"><img src="<?php echo get_template_directory_uri() ?>/img/endor.svg" alt="Grupo Endor" class="endor"></a></div>
+                <div class="copyright">&copy; 2016 Agencia de publicidad: <a href="http://grupoendor.com/" class="link">éndor</a></div>
                 <!-- /.copyright -->
             </div>
             <!-- /.col-12 -->

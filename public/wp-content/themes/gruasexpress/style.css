@@ -137,12 +137,11 @@ img {
     color: #0F1774; }
 
 .section {
-  border-bottom: 4px solid #FAF239;
   padding: 3rem 2rem;
   text-align: center; }
   .section .section-title {
-    font-size: 31px;
-    font-size: 2.21429rem;
+    font-size: 24px;
+    font-size: 1.71429rem;
     visibility: hidden;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -175,8 +174,8 @@ img {
       position: absolute;
       width: 100%; }
   .section .section-subtitle {
-    font-size: 18px;
-    font-size: 1.28571rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     visibility: hidden;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -234,8 +233,8 @@ img {
             float: none;
             margin: 1rem 2rem; } }
         #header #main-menu .menu-menu-principal-container .menu .menu-item a {
-          font-size: 18px;
-          font-size: 1.28571rem;
+          font-size: 14px;
+          font-size: 1rem;
           color: #fff;
           font-style: italic;
           font-weight: 600;
@@ -291,7 +290,6 @@ img {
 #banner {
   position: relative;
   top: -4.21429rem;
-  border-bottom: 4px solid #FAF239;
   width: 100%; }
   #banner .glide__wrapper .glide__track .glide__slide {
     position: relative;
@@ -353,14 +351,14 @@ img {
       #servicios .service .cover .img {
         width: 100%; }
     #servicios .service .title {
-      font-size: 28px;
-      font-size: 2rem;
+      font-size: 20px;
+      font-size: 1.42857rem;
       font-weight: 500;
       color: #FAF239;
       margin-bottom: .8rem; }
     #servicios .service .content {
-      font-size: 18px;
-      font-size: 1.28571rem;
+      font-size: 16px;
+      font-size: 1.14286rem;
       font-style: italic;
       font-weight: 300;
       color: #fff; }
@@ -379,13 +377,13 @@ img {
       -webkit-animation: up-in .8s forwards ease-in-out;
               animation: up-in .8s forwards ease-in-out; }
     #acerca .text .title {
-      font-size: 31px;
-      font-size: 2.21429rem;
+      font-size: 24px;
+      font-size: 1.71429rem;
       color: #0F1774;
       margin-bottom: 1rem; }
     #acerca .text .content {
-      font-size: 18px;
-      font-size: 1.28571rem;
+      font-size: 16px;
+      font-size: 1.14286rem;
       color: #415491;
       line-height: 1.5em; }
       #acerca .text .content p {
@@ -394,11 +392,11 @@ img {
       content: " ";
       display: table;
       clear: both;
-      list-style-image: url("img/check.png");
+      list-style-image: disc;
       width: 100%; }
       #acerca .text .list .item {
-        font-size: 28px;
-        font-size: 2rem;
+        font-size: 18px;
+        font-size: 1.28571rem;
         color: #415491;
         float: left;
         font-style: italic;
@@ -486,10 +484,8 @@ img {
     color: #fff;
     padding: 1rem 0;
     text-align: center; }
-    #footer .copyright .endor {
-      -webkit-transform: translateY(-0.15rem);
-              transform: translateY(-0.15rem);
-      width: 3.57143rem; }
+    #footer .copyright .link {
+      color: inherit; }
   #footer .logo .img {
     width: 12.85714rem; }
 
