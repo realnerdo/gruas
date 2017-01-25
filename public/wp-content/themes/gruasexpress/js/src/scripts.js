@@ -2,6 +2,12 @@ $(function(){
     var $body = $('body');
     var $window = $(window);
 
+    // Gallery
+    var lightgallery = $("#lightgallery");
+    if(lightgallery.length){
+        lightgallery.lightGallery();
+    }
+
     // Animate when visible
     var animate = $('.animate');
     if(animate.length){

@@ -11,10 +11,6 @@
                             <!-- /.cover -->
                             <h3 class="title"><?php the_sub_field('servicio_titulo') ?></h3>
                             <!-- /.title -->
-                            <div class="content">
-                                <?php the_sub_field('servicio_texto') ?>
-                            </div>
-                            <!-- /.content -->
                         </div>
                         <!-- /.service -->
                     </div>

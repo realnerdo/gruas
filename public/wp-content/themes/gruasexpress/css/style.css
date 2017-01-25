@@ -325,7 +325,7 @@ img {
         font-style: italic; }
 
 #servicios {
-  background: url("img/bg.jpg") repeat; }
+  background: url("../img/bg.jpg") repeat; }
   @media only screen and (max-width: 1000px) {
     #servicios [class^="col-"] {
       width: 50%; } }
@@ -388,7 +388,7 @@ img {
       display: none; }
 
 #acerca {
-  background: url("img/acerca.jpg") top left/cover no-repeat; }
+  background: url("../img/acerca.jpg") top left/cover no-repeat; }
   @media only screen and (max-width: 1000px) {
     #acerca [class^="col-"] {
       width: 100%; } }
@@ -486,7 +486,7 @@ img {
       width: 100%; }
 
 #footer {
-  background: url("img/bg.jpg") repeat;
+  background: url("../img/bg.jpg") repeat;
   padding: 1rem; }
   @media only screen and (max-width: 1000px) {
     #footer [class^="col-"] {

@@ -10,6 +10,8 @@ get_template_part('layout/equipos');
 
 get_template_part('layout/servicios');
 
+get_template_part('layout/galeria');
+
 get_template_part('layout/acerca');
 
 get_template_part('layout/aseguradoras');

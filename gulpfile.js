@@ -11,12 +11,13 @@ gulp.task('sass', function(){
     return gulp.src([
             theme + 'sass/master.sass',
             'node_modules/glidejs/dist/css/glide.core.min.css',
-            'node_modules/glidejs/dist/css/glide.theme.min.css'
+            'node_modules/glidejs/dist/css/glide.theme.min.css',
+            'node_modules/lightgallery/dist/css/lightgallery.min.css'
         ])
             .pipe(sass().on('error', sass.logError))
             .pipe(concat('style.css'))
             .pipe(autoprefixer())
-            .pipe(gulp.dest(theme))
+            .pipe(gulp.dest(theme + 'css'))
             .pipe(livereload());
 });
 
@@ -26,6 +27,9 @@ gulp.task('scripts', function(){
             'node_modules/glidejs/dist/glide.min.js',
             'node_modules/gmaps/gmaps.min.js',
             'node_modules/imagesloaded/imagesloaded.pkgd.min.js',
+            'node_modules/lightgallery/dist/js/lightgallery.min.js',
+            'node_modules/lg-thumbnail/dist/lg-thumbnail.min.js',
+            'node_modules/lg-fullscreen/dist/lg-fullscreen.min.js',
             theme + 'js/src/scripts.js'
         ])
             .pipe(concat('scripts.js'))
