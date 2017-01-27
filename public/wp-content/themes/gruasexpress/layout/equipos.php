@@ -18,9 +18,6 @@
                                 <?php while ( have_rows('equipos_slider') ) : the_row(); ?>
                                     <li class="glide__slide">
                                         <img src="<?php the_sub_field('equipo_slider_foto'); ?>" class="img" alt="<?php the_sub_field('equipo_slider_nombre'); ?>">
-                                        <div class="content">
-                                            <h3 class="headline"><?php the_sub_field('equipo_slider_nombre'); ?></h3>
-                                        </div><!-- /content -->
                                     </li>
                                 <?php endwhile; ?>
                             <?php endif; ?>
